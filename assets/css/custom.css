@@ -2,9 +2,16 @@ a {
   text-decoration: none;
   white-space: nowrap;
   position: relative;
+  color: red;
+}
+
+a.contrast {
+  text-decoration: none;
+  white-space: nowrap;
+  position: relative;
   color: black;
 }
-a:after {
+a.contrast:after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -15,7 +22,7 @@ a:after {
   transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
   background-color: rgba(50, 222, 132, 0.5);
 }
-a:hover:after {
+a.contrast:hover:after {
   top: 0%;
 }
 
@@ -25,15 +32,21 @@ body {
   color: #121314;
 }
 h1 {
-  font-size: 4.5em;
+  font-size: 5em;
   font-weight: 700;
   margin-bottom: 0;
+  color: rgba(50, 222, 132, 1)
 }
 h2 {
   font-size: 3.2em;
   font-weight: 700;
 }
-p {
+label, li, p, th {
   font-size: 1.3em;
+  font-weight: 300;
+}
+
+th {
+  font-size: 1.2em;
   font-weight: 300;
 }
