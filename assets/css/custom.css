@@ -28,7 +28,7 @@ a:hover:after {
 
 body {     
   font-size: calc(12px + 0.33vw);
-  padding: 15vh 10vw;
+  padding: 10vh 10vw;
   color: #121314;
 }
 h1 {
@@ -44,4 +44,11 @@ h2 {
 label, p {
   font-size: 1.3em;
   font-weight: 300;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
