@@ -28,7 +28,7 @@ a:hover:after {
 
 body {     
   font-size: calc(12px + 0.33vw);
-  padding: 10vh 10vw;
+  padding: 15vh 10vw;
   color: #121314;
 }
 h1 {
