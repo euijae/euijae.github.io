@@ -32,10 +32,10 @@ body {
   color: #121314;
 }
 h1 {
-  font-size: 5em;
+  font-size: 3em;
   font-weight: 700;
-  margin-bottom: 0;
-  color: rgba(50, 222, 132, 1)
+  margin-bottom: 10 rem;
+  color: black;
 }
 h2 {
   font-size: 3.2em;
