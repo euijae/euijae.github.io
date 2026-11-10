@@ -89,9 +89,8 @@ label, p {
   }
 }
 
-/* School links: same underline as the green links, in school colors */
-a.hl-nyu:after { background-color: rgba(150, 80, 215, 0.5); }       /* NYU violet, softened */
-a.hl-berkeley:after { background-color: rgba(40, 125, 225, 0.5); }  /* Berkeley blue, softened */
+/* Education: schools closer together */
+.education label { margin-bottom: 0.25rem; }
 
 /* Section titles in serif */
 .content h3 {
