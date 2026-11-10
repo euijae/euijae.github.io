@@ -52,3 +52,63 @@ label, p {
   align-items: center;
   font-family: "Lucida Console", "Courier New", monospace;
 }
+/* Two-column layout: sidebar (photo + contact) | content sections */
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+.sidebar .avatar {
+  width: 180px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #e5e7eb;
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+.sidebar label {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere;
+}
+.content section {
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* School links: same underline as the green links, in school colors */
+a.hl-nyu:after { background-color: rgba(150, 80, 215, 0.5); }       /* NYU violet, softened */
+a.hl-berkeley:after { background-color: rgba(40, 125, 225, 0.5); }  /* Berkeley blue, softened */
+
+/* Section titles in serif */
+.content h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 4rem;
+  text-align: center;
+}
+.site-footer p {
+  font-size: 0.9em;
+  color: #6b7280;
+}
+
+.sidebar .last-updated {
+  font-size: 0.85em;
+  color: #6b7280;
+}
